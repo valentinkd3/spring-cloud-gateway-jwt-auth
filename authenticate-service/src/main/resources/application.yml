@@ -1,0 +1,21 @@
+server:
+  port: 9898
+spring:
+  application:
+    name: identity-service
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/micro_demo_db
+    username: postgres
+    password: postgres
+  jpa:
+    hibernate:
+      ddl-auto: create
+
+jwt:
+  secret: 6D37D31DAF0740B739577765641F06A75B88A90C6B46F53460C087CE7DA11BB4
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
