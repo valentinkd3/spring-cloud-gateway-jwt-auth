@@ -15,14 +15,14 @@ import reactor.core.publisher.Mono;
 @Component
 public class AuthenticationFilter extends AbstractGatewayFilterFactory<AuthenticationFilter.Config> {
 
-    @Autowired
-    private RouteValidator routeValidator;
+    private final RouteValidator routeValidator;
 
-    @Autowired
-    private RestTemplate restTemplate;
+    private final RestTemplate restTemplate;
 
-    public AuthenticationFilter() {
+    public AuthenticationFilter(RouteValidator routeValidator, RestTemplate restTemplate) {
         super(Config.class);
+        this.routeValidator = routeValidator;
+        this.restTemplate = restTemplate;
     }
 
     @Override
@@ -58,7 +58,6 @@ public class AuthenticationFilter extends AbstractGatewayFilterFactory<Authentic
                     return super.writeWith(body);
                 }
             };
-
             return chain.filter(exchange.mutate().response(decoratedResponse).build());
         });
     }
