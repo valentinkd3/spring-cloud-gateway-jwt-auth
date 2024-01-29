@@ -21,8 +21,31 @@ public class JwtService {
     @Value("${jwt.secret}")
     private String secret;
 
+    public String extractUsername(String token){
+        return extractClaim(token, Claims::getSubject);
+    }
+
+    private  <T> T extractClaim(String token, Function<Claims, T> claimsResolver){
+        Claims claims = extractAllClaims(token);
+        return claimsResolver.apply(claims);
+    }
+
+    private Claims extractAllClaims(String token) {
+        return Jwts
+                .parserBuilder()
+                .setSigningKey(secret)
+                .build()
+                .parseClaimsJws(token)
+                .getBody();
+    }
+
+
     public void validateToken(final String token) {
-        Jwts.parserBuilder().setSigningKey(getSignKey()).build().parseClaimsJws(token);
+        Jwts
+                .parserBuilder()
+                .setSigningKey(getSignKey())
+                .build()
+                .parseClaimsJws(token);
     }
 
     public String generateToken(String username){

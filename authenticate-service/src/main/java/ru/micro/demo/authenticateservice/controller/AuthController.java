@@ -36,7 +36,6 @@ public class AuthController {
 
     @GetMapping("/validate")
     public String getToken(@RequestParam("token") String token){
-        authService.validateToken(token);
-        return "Token is valid"; // Если токен неверный - получим исключение
+        return authService.validateToken(token);
     }
 }

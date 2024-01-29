@@ -5,17 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e555dfb5-833d-4994-9576-540d89d6892b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/eureka-client/src/main/java/ru/micro/demo/eurekaclient/config/ObjectMapperConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-client/src/main/java/ru/micro/demo/eurekaclient/dto/JwtDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-client/src/main/java/ru/micro/demo/eurekaclient/service/JwtService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.0/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d6ecb386-c96d-4b26-b1fd-651eb9f0275f.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d6ecb386-c96d-4b26-b1fd-651eb9f0275f.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api-gateway/src/main/java/ru/micro/demo/apigateway/filter/AuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/java/ru/micro/demo/apigateway/filter/AuthenticationFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-client/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-client/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-client/src/main/java/ru/micro/demo/eurekaclient/controller/JwtDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/authenticate-service/src/main/java/ru/micro/demo/authenticateservice/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/authenticate-service/src/main/java/ru/micro/demo/authenticateservice/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authenticate-service/src/main/java/ru/micro/demo/authenticateservice/service/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/authenticate-service/src/main/java/ru/micro/demo/authenticateservice/service/AuthService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authenticate-service/src/main/java/ru/micro/demo/authenticateservice/service/JwtService.java" beforeDir="false" afterPath="$PROJECT_DIR$/authenticate-service/src/main/java/ru/micro/demo/authenticateservice/service/JwtService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/eureka-client/src/main/java/ru/micro/demo/eurekaclient/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-client/src/main/java/ru/micro/demo/eurekaclient/controller/TestController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,6 +24,23 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="spring-micro-demo" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -47,14 +61,20 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/Programming/PROJECTS/KAFKA/KafkaApp/data-generator-microservice",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "D:/Programming/PROJECTS/SECURITY/jwt-auth",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "spring.configuration.checksum": "3a96f1a3a37db4414648f6c973321271",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -108,7 +128,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1706453215286</updated>
-      <workItem from="1706453216850" duration="1305000" />
+      <workItem from="1706453216850" duration="1647000" />
+      <workItem from="1706510592212" duration="8719000" />
+      <workItem from="1706548093959" duration="1036000" />
     </task>
     <servers />
   </component>
